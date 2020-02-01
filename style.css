@@ -53,15 +53,7 @@ padding: 9rem 0 6rem 0;
     margin: 0 auto;
     margin-top: 16px;
 }
-.primaryHeader:after::after {
-    display: block;
-    height: 3px;
-    background-color: #151d4b;
-    content: " ";
-    width: 24rem;
-    margin: 0 auto;
-    margin-top: 16px;
-}
+ 
 
 
 .row{
