@@ -27,6 +27,8 @@ body {
     visibility: hidden;
 }
 
+
+
 /***********RE_Usable********************/
 .primaryHeader_container{
 padding: 9rem 0 6rem 0;
@@ -42,6 +44,7 @@ padding: 9rem 0 6rem 0;
     letter-spacing: 4px;
     word-spacing: 1.5rem;
     font-style: italic;
+    text-shadow: -3px 1px 4px rgb(54, 54, 54);
 }
 
 .primaryHeader:after {
@@ -52,17 +55,31 @@ padding: 9rem 0 6rem 0;
     width: 24rem;
     margin: 0 auto;
     margin-top: 16px;
+    
 }
- 
-
 
 .row{
     width: 80%;
     margin: auto;
 }
-/*********HEADER***************/
 
-/* halalalala */
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(8rem); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } }
+
+@keyframes appears {
+    0% {
+      opacity: 0;
+       }
+    100% {
+      opacity: 1;
+      } }
+
+/*********HEADER***************/
 
 .header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.7)),url(resources/img/cover.jpg);
@@ -70,6 +87,7 @@ padding: 9rem 0 6rem 0;
     background-position: top;
     height: 95vh;
     position: relative;
+    background-attachment:fixed;
 }
 
 .headerTextBox{
@@ -86,12 +104,18 @@ text-align: center;
     font-weight: 400;
     font-size:7rem;
     letter-spacing: 3px;
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .headerTextBox__Tag--size{
     font-size: 2rem;
     word-spacing: 1rem;
     letter-spacing: 2px;
+    animation-name: appears;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-out; */
 }
 /**********************************/
 /********Section_blogs**********/
@@ -108,11 +132,12 @@ text-align: center;
 
 .blog_card{
     margin: 0 , 5px;
-    border-radius: ;
     width: 92%;
-    -webkit-box-shadow: -1px 4px 16px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 4px 16px 3px rgba(0,0,0,0.75);
-    box-shadow: -1px 4px 16px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 15px -4px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    overflow: hidden;
 }
 .blog_image{
     width: 100%;
@@ -143,12 +168,20 @@ text-align: center;
 }
 
 .btn_read {
-    margin-top: 2rem;
-    padding-bottom: 3rem;
-    display: block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    display: inline-block;
     font-size: 1.5rem;
     color: #3c4173;
     text-decoration: none;
     font-style: italic;
+    border-radius: 3px;
+    transition: all .5s;
 }
+
+.btn_read:hover{
+    background-color: #3c4173;
+    color: whitesmoke ;
+}
+
 
