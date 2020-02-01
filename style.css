@@ -29,16 +29,16 @@ body {
 
 /***********RE_Usable********************/
 .primaryHeader_container{
-padding: 10rem;
+padding: 9rem 0 6rem 0;
 }
 
 .primaryHeader{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #3c4173;
-    margin:0;
-    font-weight:300;
-    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    text-transform: capitalize;
     letter-spacing: 4px;
     word-spacing: 1.5rem;
     font-style: italic;
