@@ -28,6 +28,12 @@ body {
 
 /***********RE_Usable********************/
 
+.height-50{
+    height: 50rem;
+}
+
+
+
 section{
     padding: 10rem  0 ; 
 }
@@ -242,4 +248,124 @@ text-align: center;
 .btn_showMore:hover {
     background-color: #3c4173;
     color: #f8f9fa;
+}
+
+
+/************************************/
+/***********Images*******************/
+.composition {
+    position: relative; 
+} 
+.composition__photo {
+    width: 45%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s; 
+}
+.composition__photo--p1 {
+    left: -1%;
+    top: -5rem;
+}
+.composition__photo--p2 {
+    right: 10%;
+    top: 2rem;
+ }
+.composition__photo--p3 {
+    left: 10%;
+    top: 14rem; 
+}
+.composition__photo--p4 {
+    left: -25%;
+    top: 28rem;
+}
+.composition__photo--p5 {
+    left: -36%;
+    top: 11rem;
+}
+.composition__photo--p6 {
+    left: 57%;
+    top: 23rem; 
+}
+.composition__photo:hover {
+    outline: 1rem solid #3c4173;
+    outline-offset: 1rem;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20; 
+}
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); 
+}
+
+.gallery_content{
+    margin: 18rem 0;
+}
+
+.gallery_tag{
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.btn_gallery{
+    padding: 1.5rem 4.2rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    background-color: #3c4173;
+    transition: all .3s;
+}
+
+.btn_gallery:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1rem 2rem;
+    background: linear-gradient(to right bottom, rgb(51, 211, 255), rgb(0, 5, 80));
+}
+.btn_gallery:active{
+    transform: translateY(-1px);
+}
+/************************************/
+/***********Footer*******************/
+
+footer{
+    background-color: rgb(1, 1, 31);
+    height: 30rem;
+    text-align: center;
+}
+
+.footer_container{
+    padding-top: 4rem;
+}
+
+.footer_tag{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer_para{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.icon{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+.copyright{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    color: whitesmoke;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
